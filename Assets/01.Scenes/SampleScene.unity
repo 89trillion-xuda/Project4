@@ -375,12 +375,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118108815}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 987269944}
-  m_RootOrder: 1
+  m_Father: {fileID: 1795889657}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2024,6 +2024,10 @@ MonoBehaviour:
   rank1: {fileID: 21300000, guid: fc2bc88b5070447ef98b190e6c300912, type: 3}
   rank2: {fileID: 21300000, guid: 8fa4e29430d964eb6a8220611fc42ff2, type: 3}
   rank3: {fileID: 21300000, guid: cfaca247261bf4d98b9545bde44c63ac, type: 3}
+  BorderImg1: {fileID: 21300000, guid: ef5e37f352651414a89cfa4cccd74973, type: 3}
+  BorderImg2: {fileID: 21300000, guid: ed3812922d37a4908bb2307281415a5a, type: 3}
+  BorderImg3: {fileID: 21300000, guid: 476f1b352200c4ebbbee165869ab6f08, type: 3}
+  BorderImg4: {fileID: 21300000, guid: 67adf2ca070824b949813801483cd68b, type: 3}
   AreanBadge1: {fileID: 21300000, guid: 0382ae979ff3a4a0cb1adfdad50a6aac, type: 3}
   AreanBadge2: {fileID: 21300000, guid: 0dd2255a607b84f679f06fa1f87dc630, type: 3}
   AreanBadge3: {fileID: 21300000, guid: d623ab43a52f540528277e2969098cd7, type: 3}
@@ -2041,6 +2045,7 @@ MonoBehaviour:
   RemainSecond: {fileID: 225621597}
   MyRankTxt: {fileID: 1418805807}
   MyRankImg: {fileID: 95135893}
+  MyBorderImg: {fileID: 1293210568}
   MyNameTxt: {fileID: 776534769}
   MyTrophyTxt: {fileID: 397309401}
   rankListApiManager: {fileID: 118108817}
@@ -2265,7 +2270,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1795889657}
-  - {fileID: 118108816}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3540,6 +3544,7 @@ GameObject:
   - component: {fileID: 1795889659}
   - component: {fileID: 1795889658}
   - component: {fileID: 1795889660}
+  - component: {fileID: 1795889661}
   m_Layer: 5
   m_Name: LeaderBoardRootPanel
   m_TagString: Untagged
@@ -3562,6 +3567,7 @@ RectTransform:
   - {fileID: 1585312334}
   - {fileID: 1635237569}
   - {fileID: 2075880988}
+  - {fileID: 118108816}
   m_Father: {fileID: 987269944}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3582,7 +3588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_Maskable: 1
@@ -3621,6 +3627,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeginObjectCLone: {fileID: 1635237568}
   PopupsObjectClone: {fileID: 2075880987}
+--- !u!114 &1795889661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795889656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
 --- !u!1 &1807249954
 GameObject:
   m_ObjectHideFlags: 0
